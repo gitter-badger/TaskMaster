@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if tasks %}
+	{% for task in tasks %}
+		<p>{{task.name}}</p>
+	{% endfor %}
+{% else %}
+	<p>looks like you dont have any tasks you lazy bum!</p>
+{% endif %}
+
+{% endblock %}
