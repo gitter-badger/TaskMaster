@@ -1,4 +1,35 @@
-<h1>This is from base.html!</h1>
+<style type="text/css">
+	
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#topbar {
+	text-align: center;
+	border-bottom: 10px solid #3498DB;
+	padding: 10px; 
+}
+
+#new_task {
+	background-color: #ccc;
+	border-radius:15px;
+	text-align: center;
+	height: 25px;
+	width: 300px;
+	color: #555;
+	font-family: arial;
+}
+
+
+</style>
+
+<div id="topbar">
+	
+<input id="new_task" type="text"></input>
+<!--<input id="add_new_task" type="button" value="Add"></input>-->	
+
+</div>
 
 {% block content %}
 
