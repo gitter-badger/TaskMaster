@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#topbar {
+	text-align: center;
+	background-color: #3498DB;
+	height: 10vh;
+}
+
+#new_task {
+	height: 10vh;
+	width: 300px;
+	background-color: #44a8eB;
+	border: none;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1.5em;
+	font-family: 'Open Sans';
+	outline: none;	
+}
+
+.tasks_done {
+	background-color: #3498DB;
+	color: #fff;
+	padding: 25px;
+	margin: 1% 10vw;
+	font-family: 'Open Sans';
+	font-size: 1.5em;
+}
+
+.tasks_today {
+	background-color: #E68B0B;
+	color: #fff;
+	padding: 25px;
+	margin: 1% 10vw;
+	font-family: 'Open Sans';
+	font-size: 1.5em;
+}
+
+.tasks_today:hover {
+	background-color: #f69B1B;
+	margin: 1% 11vw;
+	cursor: pointer;
+}
+
+.block_label {
+	margin-left: 12vw;
+	margin-top: 3%;
+	font-family: 'Open Sans';
+	font-size: 2em;
+}
