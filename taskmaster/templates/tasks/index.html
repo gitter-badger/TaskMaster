@@ -3,11 +3,29 @@
 {% block content %}
 
 {% if tasks %}
-	{% for task in tasks %}
-		<p>{{task.name}}</p>
+	
+	<h3 class="block_label">Things I've done today!</h3>
+	
+	<p class="tasks_done">Buy Groceries</p>
+
+	{% for task in tasks.done %}
+
+		<p class="tasks_done">{{task.name}}</p>
+		
 	{% endfor %}
+
+	<h3 class="block_label">Today's tasks</h3>
+
+	{% for task in tasks %}
+
+		<p class="tasks_today">{{task.name}}</p>
+
+	{% endfor %}
+
 {% else %}
+
 	<p>looks like you dont have any tasks you lazy bum!</p>
+
 {% endif %}
 
 {% endblock %}
