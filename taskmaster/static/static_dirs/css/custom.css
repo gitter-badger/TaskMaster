@@ -51,3 +51,9 @@
 	font-family: 'Open Sans';
 	font-size: 2em;
 }
+
+#congrats{
+	margin-top: 40vh;
+	text-align: center;
+	color: #3498DB;
+}

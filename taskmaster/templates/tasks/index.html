@@ -4,9 +4,11 @@
 
 {% if tasks %}
 	
-	<h3 class="block_label">Things I've done today!</h3>
+	{% if tasks.done %}
 	
-	<p class="tasks_done">Buy Groceries</p>
+		<h3 class="block_label">Things I've done today!</h3>
+	
+	{% endif %}
 
 	{% for task in tasks.done %}
 
@@ -14,7 +16,11 @@
 		
 	{% endfor %}
 
-	<h3 class="block_label">Today's tasks</h3>
+	{% if tasks %}
+
+		<h3 class="block_label">Today's tasks</h3>
+
+	{% endif %}
 
 	{% for task in tasks %}
 
@@ -24,7 +30,7 @@
 
 {% else %}
 
-	<p>looks like you dont have any tasks you lazy bum!</p>
+	<h1 id="congrats">Congratulations! It looks like you don't have anythin to do!</h1>
 
 {% endif %}
 

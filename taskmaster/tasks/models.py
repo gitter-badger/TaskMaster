@@ -6,8 +6,5 @@ class Task(models.Model):
 	date = models.DateField()
 	done = False;
 
-	def setDone(self, newval):
-		self.done = newval
-
 	def __unicode__(self):
 		return self.name
